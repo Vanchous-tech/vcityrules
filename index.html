@@ -1,67 +1,35 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<html lang="ru"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>V-City RP — правила сервера</title>
-<style>
-:root{--bg:#0a0b0d;--panel:#111216;--row:#17181d;--line:#303136;--text:#e9eaee;--muted:#8f939d;
---accent:#ff8028;--accent-soft:#ffb273;--accent-bg:#221710}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 "Segoe UI",Roboto,Arial,sans-serif}
-a{color:var(--accent-soft)}
-header.top{border-bottom:1px solid #232427;padding:26px 28px;position:sticky;top:0;background:rgba(10,11,13,.94);backdrop-filter:blur(6px);z-index:20}
-.brand{color:var(--accent);font-weight:700;letter-spacing:2px;font-size:15px}
-.brand small{display:block;color:var(--muted);font-weight:400;letter-spacing:1px;font-size:11px;margin-top:5px}
-.meta{color:var(--muted);font-size:12px;margin-top:8px}
-.wrap{display:grid;grid-template-columns:290px minmax(0,1fr);gap:34px;max-width:1240px;margin:28px auto 80px;padding:0 26px}
-nav.toc{position:sticky;top:120px;align-self:start;max-height:calc(100vh - 150px);overflow:auto;border-left:1px solid #232427;padding-left:18px}
-nav.toc ul{list-style:none;margin:0;padding:0}
-nav.toc li{margin:7px 0;font-size:13px}
-.toc>ul>li{margin:11px 0;font-weight:600}
-.toc>ul>li>a{color:#cfd1d8}
-.toc ul ul{margin:5px 0 5px 8px;border-left:1px solid #232427;padding-left:10px}
-.toc ul ul li{font-weight:400;margin:5px 0}
-nav.toc a{color:var(--muted);text-decoration:none}
-nav.toc a:hover{color:var(--accent-soft)}
-h1{font-size:30px;margin:0 0 6px;font-weight:600}
-h2{font-size:22px;margin:44px 0 14px;padding-bottom:9px;border-bottom:1px solid #26272b;font-weight:600}
-h2 a.anchorlink{color:#4a4d55;text-decoration:none;margin-left:8px;font-size:16px}
-h3{font-size:17px;margin:26px 0 9px;color:var(--accent-soft);font-weight:600}
-h4{font-size:15px;margin:20px 0 8px}
-p{margin:11px 0}
-strong{color:#fff}
-code{background:#1b1c21;border:1px solid #34353b;border-radius:3px;padding:1px 6px;font-size:13px;color:var(--accent-soft)}
-blockquote{margin:16px 0;padding:14px 18px;border-left:3px solid var(--accent);background:var(--accent-bg);color:#e6bd98;border-radius:0 4px 4px 0}
-blockquote p{margin:0}
-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:13.5px}
-th,td{border:1px solid #2b2c31;padding:9px 11px;text-align:left;vertical-align:top}
-th{background:#1a1b20;color:var(--accent-soft);font-weight:600}
-tr:nth-child(even) td{background:#101114}
-ul,ol{padding-left:24px}
-li{margin:6px 0}
-hr{border:0;border-top:1px solid #232427;margin:34px 0}
-.quick{border:1px solid #35363b;background:var(--panel);border-radius:6px;padding:20px 24px;margin:22px 0 30px}
-.quick h2{margin-top:0;border:0;font-size:17px;color:var(--accent)}
-.quick h1{display:none}
-.quick table{font-size:12.5px}
-.footer{max-width:1240px;margin:0 auto 60px;padding:0 26px;color:#5b5f69;font-size:12px}
-@media (max-width:900px){.wrap{grid-template-columns:1fr}nav.toc{display:none}table{font-size:12.5px}}
-@media (max-width:640px){h1{font-size:24px}h2{font-size:19px}table{table-layout:fixed;width:100%}th,td{padding:6px 7px;font-size:11.5px;word-break:break-word}code{font-size:12px}.wrap{padding:0 14px}}
-@media print{body{background:#fff;color:#000}header.top{position:static}nav.toc{display:none}.wrap{display:block}h2,h3{page-break-after:avoid}table{page-break-inside:avoid}}
-</style>
-</head>
-<body>
+<style>:root{--bg:#eef0f2;--paper:#fff;--ink:#202b35;--muted:#697581;--line:#dde3e8;--navy:#14232f;--accent:#a85b16;--soft:#fff5e8;--focus:#cb782e;--radius:16px;color-scheme:light}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:32px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}a:hover{color:#69360b}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:4px}header.top{background:var(--navy);color:#fff;padding:34px max(28px,calc((100vw - 1360px)/2 + 28px));border-bottom:4px solid #c5894d}.brand{font-size:14px;font-weight:800;letter-spacing:2px}.brand small{display:block;font-size:11px;letter-spacing:1.5px;color:#b8c6d0;font-weight:500;margin-top:8px}.page-title{font-size:clamp(30px,4vw,48px);line-height:1.15;font-weight:750;letter-spacing:-1.4px;margin:23px 0 16px}.meta{color:#b8c6d0;font-size:12px;line-height:1.8;max-width:760px}.edition{color:#e8b47f;font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}.wrap{max-width:1360px;margin:32px auto 70px;display:grid;grid-template-columns:280px minmax(0,1fr);align-items:start;gap:28px;padding:0 28px}nav.toc{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto;scrollbar-width:thin;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 18px;box-shadow:0 4px 16px #14232f04}nav>.brand{color:var(--muted);font-size:11px!important;letter-spacing:1.8px!important;margin:0 8px 18px!important}nav ul{list-style:none;margin:0;padding:0}nav li{margin:2px 0;font-size:12px;line-height:1.55}nav a{display:block;padding:9px 10px;border-radius:7px;text-decoration:none;color:#54616b;border-left:2px solid transparent;transition:background .15s}nav a:hover{background:#f4f6f7;color:var(--navy)}nav a.current{color:#82430d;background:var(--soft);border-left-color:#bd7b3c;font-weight:700}nav .toc>ul>li>a{font-weight:650;color:#263744}nav ul ul{padding:0 0 6px 12px;border-left:1px solid var(--line);margin:0 0 8px 10px}nav ul ul a{padding-top:6px;padding-bottom:6px;font-size:11px;font-weight:400}main{min-width:0;background:var(--paper);padding:36px clamp(24px,4vw,64px) 56px;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 6px 24px #14232f04}main h1{font-size:29px;line-height:1.35;letter-spacing:-.7px;margin:52px 0 24px;padding-top:12px;color:#172b3a}main h2{font-size:19px;line-height:1.5;letter-spacing:-.2px;margin:32px 0 13px;color:#24394a}main h3{font-size:17px;line-height:1.55;margin:26px 0 12px;color:#263e50}h1 .toclink,h2 .toclink{color:inherit;text-decoration:none}h1 .toclink:hover,h2 .toclink:hover{text-decoration:underline;text-decoration-color:#bc9268}main p{margin:12px 0 18px}main ul,main ol{padding-left:24px;margin:14px 0 24px}main li{padding-left:5px;margin:11px 0}main li::marker{color:#a1642d;font-weight:700}strong{font-weight:650}code{font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f3f5;color:#344c60;border:1px solid #e1e6ea;border-radius:5px;padding:2px 6px;overflow-wrap:anywhere}hr{border:0;border-top:1px solid var(--line);margin:42px 0}blockquote{margin:20px 0;padding:6px 22px;background:#edf3f7;border-left:3px solid #698ba3;border-radius:0 9px 9px 0}blockquote p{margin:12px 0}main p.penalty{background:var(--soft);border:1px solid #f0d9bd;padding:12px 16px;border-radius:9px;color:#70441c;font-size:14px}main p.penalty em{font-style:normal}.table-scroll{width:100%;overflow-x:auto;margin:22px 0 28px;border:1px solid var(--line);border-radius:10px}table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.65;text-align:left}th{background:#eaf0f4;color:#30485b;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.65px}th,td{padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tbody tr:nth-child(even){background:#f8fafb}tbody tr:hover{background:#fff7ed}.lore{padding:8px 0 8px;border:0;margin:24px 0}.lore h1{margin:0 0 28px;padding:0;font-size:32px}.lore h2{font-size:17px;text-transform:none;color:#8e5623;margin-top:28px}.lore p{color:#4d5e6b}.quick-shell{border:1px solid #dce4ea;border-radius:10px;margin:0 0 34px;background:#fafcfd}.quick-shell>summary{list-style:none;padding:17px 20px;cursor:pointer;font-size:13px;font-weight:700;color:#344d60;display:flex;justify-content:space-between;align-items:center;gap:16px}.quick-shell>summary::-webkit-details-marker{display:none}.quick-shell>summary:after{content:'+';font-size:22px;font-weight:400;color:#9a642e}.quick-shell[open]>summary:after{content:'−'}.quick-shell[open]>summary{border-bottom:1px solid var(--line)}.quick{padding:6px 22px 22px;font-size:14px;line-height:1.8}.quick h2{font-size:16px;margin-top:20px}.quick .table-scroll{margin:16px 0}.quick p{color:#586974}#drina{border:1px solid #d9e3e9;border-radius:12px;padding:10px 24px;background:#f6f9fb;margin:30px 0}#drina h3{color:#224359}#kill-motives,.wounded-rules{border-top:1px solid var(--line);margin-top:26px;padding-top:4px}#kill-motives h3,.wounded-rules h3{color:#8b531f}.footer{max-width:1000px;margin:0 auto 40px;padding:0 28px;font-size:11px;line-height:1.8;text-align:center;color:#7e8992}.tools{display:flex;align-items:center;gap:9px;margin:0 0 26px;padding-bottom:24px;border-bottom:1px solid var(--line);flex-wrap:wrap}.search-box{flex:1;min-width:180px;position:relative}.search-box input{width:100%;border:1px solid #d8e1e7;background:#f5f8fa;border-radius:8px;color:var(--ink);padding:10px 12px;font-size:13px}.tools button,.nav-toggle{border:1px solid #d8e1e7;background:white;border-radius:8px;font-size:12px;line-height:1.4;padding:11px 13px;color:#3c5365}.tools button:hover{background:#edf2f5}.tools button:disabled{opacity:.4;cursor:default}.results{font-size:11px;min-width:60px;color:var(--muted)}mark.search-hit{background:#ffdf92;color:#1e2e38;border-radius:2px}mark.search-hit.selected{background:#efb35d;outline:2px solid #b87428;outline-offset:1px}.nav-toggle{display:none}.reading-progress{position:fixed;top:0;left:0;width:100%;height:3px;background:transparent;z-index:100;pointer-events:none}.reading-progress span{display:block;width:0;height:100%;background:#c68a4c}.to-top{position:fixed;right:24px;bottom:24px;width:42px;height:42px;display:grid;place-items:center;text-decoration:none;background:var(--navy);color:white;border-radius:50%;box-shadow:0 4px 16px #15232e30}.to-top:hover{color:#e8b47f}.skip-link{position:fixed;top:-100px;left:16px;background:white;color:black;z-index:200;padding:10px}.skip-link:focus{top:12px}body:not(.has-js) .tools{display:none}@media(min-width:1500px){body{font-size:17px}}@media(max-width:1000px){.wrap{grid-template-columns:230px minmax(0,1fr);gap:18px;padding:0 18px}main{padding:28px}nav.toc{padding:20px 12px}main h1{font-size:25px}}@media(max-width:760px){header.top{padding:26px 22px}.page-title{letter-spacing:-.7px}.wrap{display:block;margin:18px auto 40px;padding:0 12px}nav.toc{position:static;max-height:none;margin-bottom:16px;padding:18px;border-radius:12px}body.has-js nav.toc .toc{display:none}body.has-js nav.toc.mobile-open .toc{display:block;margin-top:16px}nav>.brand{display:none}.nav-toggle{display:block;width:100%;text-align:left;background:#f5f8fa}main{padding:22px 19px;border-radius:12px;font-size:15px}main h1{font-size:25px;margin-top:38px}.lore h1{font-size:27px}main h2{font-size:18px}.tools{gap:8px}.search-box{flex-basis:100%}.tools button{padding:9px 11px}.quick{padding:4px 15px 16px}th,td{padding:11px 12px;min-width:100px}#drina{padding:8px 16px}.to-top{right:16px;bottom:16px;width:36px;height:36px}.footer{text-align:left}.lore{margin-top:20px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}@media print{:root{--ink:#111;--paper:white;--bg:white}body{font:11pt/1.55 Georgia,serif;background:white;color:black}header.top{background:white;color:black;padding:0 0 18px;border-bottom:2px solid black}.brand,.brand small,.meta{color:#333}.page-title{font-size:26pt}.wrap{display:block;max-width:none;margin:20px 0;padding:0}nav.toc,.tools,.to-top,.reading-progress,.skip-link{display:none!important}main{border:0;padding:0;box-shadow:none}main h1{font-size:20pt;break-after:avoid}main h2,main h3{break-after:avoid}table{font-size:9pt}tr{break-inside:avoid}a{color:inherit;text-decoration:none}.table-scroll{overflow:visible}blockquote,#drina{background:transparent}.quick-shell{border:0} .quick-shell>summary{display:none}.quick-shell:not([open]) .quick{display:none}.footer{margin-top:20px;padding:0}mark.search-hit,mark.search-hit.selected{background:none;outline:0}header.top,.lore h1{break-after:avoid}}
+</style><style id="dark-reader-theme">
+/* Dark reader theme. Print remains light and ink-friendly. */
+@media screen {
+:root{--bg:#0b1117;--paper:#121c25;--ink:#d9e2e9;--muted:#97a8b7;--line:#293744;--navy:#101d28;--accent:#e7b27c;--soft:#2c251f;--focus:#e3a970;color-scheme:dark}
+body{background:radial-gradient(ellipse at top right,#14222f 0,transparent 50%),var(--bg)}
+header.top{background:#0e1b26;border-bottom-color:#b9824c}.brand{color:#f0f4f7}.brand small,.meta{color:#a5b6c3}
+a:hover{color:#ffd1a0}nav.toc,main{box-shadow:0 10px 36px #00000016}nav a{color:#a8b9c7}nav .toc>ul>li>a{color:#cad8e2}nav a:hover{background:#1b2a36;color:#f4e3cf}nav a.current{background:#30271f;color:#f0bc85;border-left-color:#d99c5f}
+main h1{color:#edf3f7}main h2{color:#dce7ef}main h3{color:#cadce9}main li::marker{color:#d6a06b}
+code{background:#1b2b38;color:#b7d4ea;border-color:#304656}blockquote{background:#192c3a;border-left-color:#648ca7;color:#cedde8}main p.penalty{background:#30281f;border-color:#57422d;color:#e9be90}
+th{background:#1d3040;color:#b9d0e2}tbody tr:nth-child(even){background:#16232e}tbody tr:hover{background:#283027}
+.lore h2{color:#e4b586}.lore p{color:#b7c7d3}.quick-shell{background:#14212d;border-color:#2d4253}.quick-shell>summary{color:#d2e1ed}.quick-shell>summary:after{color:#e3b17b}.quick p{color:#b4c4d0}
+#drina{background:#172833;border-color:#334b5b}#drina h3{color:#c4deef}#kill-motives h3,.wounded-rules h3{color:#dfb382}
+.search-box input{border-color:#334959;background:#0e1922;color:#dce7ef}.search-box input::placeholder{color:#93a7b7}.tools button,.nav-toggle{background:#1b2b38;border-color:#354b5c;color:#c9dbe9}.tools button:hover{background:#263d4e}.tools button:disabled{opacity:.5}.footer{color:#91a4b3}.to-top{background:#254356;color:#e5eff6;border:1px solid #466176}
+@media(max-width:760px){.nav-toggle{background:#1b2b38}}
+}
+</style></head>
+<body id="top"><div aria-hidden="true" class="reading-progress"><span id="reading-progress"></span></div><a class="skip-link" href="#rule-content">Перейти к правилам</a>
 <header class="top">
-  <div class="brand">V-CITY RP <small>СИРИЯ · ДЕЙР-ЭЗ-ЗОР · MEDIUM RP</small></div>
-  <div class="meta">Правила версии 1.0 · соответствуют сборке 0.3.4 · военные фракции — расширенный устав (раздел 6)</div>
+<div class="brand">V-CITY RP <small>2028 · СЕВЕРНАЯ АМЕРИКА · MEDIUM RP</small></div>
+<div class="page-title">Правила сервера</div><div class="meta">Правила версии 1.8 · лор: 2028 год, Северная Америка · механики по исходной редакции для сборки 0.3.4</div>
 </header>
 <div class="wrap">
-  <nav class="toc">
-    <div class="brand" style="font-size:12px;letter-spacing:1px;margin-bottom:10px">СОДЕРЖАНИЕ</div>
-    <div class="toc">
-<ul>
+<nav aria-label="Оглавление правил" class="toc"><button aria-controls="nav-items" aria-expanded="false" class="nav-toggle" id="nav-toggle" type="button">Оглавление правил ☰</button>
+<div class="brand" style="font-size:12px;letter-spacing:1px;margin-bottom:10px">СОДЕРЖАНИЕ</div>
+<div class="toc" id="nav-items">
+<ul><li><a href="#lore">Лор сервера — 2028 год</a></li>
 <li><a href="#_1">Как читать эти правила</a></li>
 <li><a href="#1-roleplay">1. Главные принципы RolePlay</a><ul>
 <li><a href="#11">1.1. Обязательный отыгрыш</a></li>
@@ -69,7 +37,7 @@ hr{border:0;border-top:1px solid #232427;margin:34px 0}
 <li><a href="#13-fearrp">1.3. Принцип FearRP (страх за жизнь)</a></li>
 <li><a href="#14-ic-ooc">1.4. Разделение IC и OOC</a></li>
 <li><a href="#15">1.5. Имя персонажа и внешность</a></li>
-<li><a href="#16-nlr-no-life-rule">1.6. NLR — новая жизнь (No Life Rule)</a></li>
+<li><a href="#16-nlr-no-life-rule">1.6. NLR — новая жизнь (New Life Rule)</a></li>
 <li><a href="#17-combat-log">1.7. Combat Log (выход из игры во время ситуации)</a></li>
 <li><a href="#18">1.8. Приоритет правил</a></li>
 </ul>
@@ -103,12 +71,10 @@ hr{border:0;border-top:1px solid #232427;margin:34px 0}
 </li>
 <li><a href="#5">5. Роли и фракции</a><ul>
 <li><a href="#51">5.1. Как работает система ролей</a></li>
-<li><a href="#52-4">5.2. Вкладка «Гражданские» — 4 роли</a></li>
-<li><a href="#53">5.3. Оружейник (фракция ИГИЛ) — единственная роль со станком</a></li>
+<li><a href="#52-5">5.2. Вкладка «Гражданские» — 5 ролей</a></li>
+<li><a href="#53">5.3. Оружейник — единственная роль со станком</a></li>
 <li><a href="#54-delta-force">5.4. США — Delta Force</a></li>
-<li><a href="#55">5.5. ЧВК «Вагнер»</a></li>
-<li><a href="#56">5.6. ВС РФ</a></li>
-<li><a href="#57">5.7. ИГИЛ</a></li>
+<li><a href="#55">5.5. ВС РФ</a></li><li><a href="#drina">5.5.1. Сербский добровольческий корпус «Дрина»</a></li>
 </ul>
 </li>
 <li><a href="#6">6. Расширенные правила военных фракций (устав)</a><ul>
@@ -129,28 +95,27 @@ hr{border:0;border-top:1px solid #232427;margin:34px 0}
 <li><a href="#9">9. Администрация и изменения правил</a></li>
 </ul>
 </div>
-
-  </nav>
-  <main>
-    <section class="quick">
-      <h2>Коротко о главном</h2>
-      <p><strong>Сервер:</strong> Сирия, Дейр-эз-Зор · <strong>Medium RP</strong>, военные — <strong>Hard RP</strong></p>
+</nav>
+<main id="rule-content"><div aria-label="Поиск по правилам" class="tools" role="search"><div class="search-box"><input aria-label="Поиск по тексту правил" autocomplete="off" id="rule-search" placeholder="Поиск: плен, FearRP, Дрина…" type="search"/></div><span aria-live="polite" class="results" id="search-status"></span><button disabled="" id="search-next" title="Следующее совпадение · Enter" type="button">Далее ↓</button><button disabled="" id="search-clear" type="button">Сброс</button><button id="print-rules" type="button">Печать / PDF</button></div>
+<details class="quick-shell"><summary>Краткая памятка · основные правила и команды</summary><section class="quick">
+<h2>Коротко о главном</h2>
+<p><strong>Сервер:</strong> континентальная Северная Америка, 2028 год · <strong>Medium RP для всех ролей</strong>. Для военных дополнительно действует устав раздела 6.</p>
 <h2>Семь главных правил</h2>
 <ol>
 <li><strong>Играешь персонажа, а не себя.</strong> Не отыграл — не произошло.</li>
 <li><strong>/me</strong> — описание действий персонажа от третьего лица: <code>/me достал КПК</code>. Результат и окружение — <code>/do</code>, спорная попытка — <code>/try</code> (сервер бросает 50/50). Реплики видят только игроки в 512 юнитах, лимит 160 символов, раз в секунду.</li>
-<li><strong>FearRP:</strong> без оружия в руках и под прицелом — подчиняешься. Исключения: пояс смертника надет насильно, одобренная анкета спецназа/ЧВК, бой уже идёт.</li>
+<li><strong>FearRP:</strong> без оружия в руках и под прицелом — подчиняешься. Исключения: пояс смертника надет насильно, одобренная анкета спецназа, бой уже идёт.</li>
 <li><strong>Убийство — только с веской IC-причиной и отыгрышем.</strong> Всё остальное: FreeKill/RDM → Jail 60 мин / Ban 1–3 дня. Массовое — Ban 7–30 дней / PermBan.</li>
 <li><strong>OOC-инфа не работает в игре.</strong> Discord, стрим, личка, чужой голосовой канал — MetaGaming.</li>
-<li><strong>Смерть = новая жизнь (NLR):</strong> 5 минут не возвращаешься на место гибели и не мстишь.</li>
-<li><strong>F4 = смена персонажа.</strong> Сменить роль, чтобы убежать от боя, плена или долга — Combat Log (Jail 30–60 мин / Ban 1–3 дня).</li>
+<li><strong>Смерть = NLR:</strong> забываешь эпизод гибели, не мстишь за свою смерть. Возвращаться непосредственно к месту гибели нельзя <strong>2 минуты после возрождения</strong>; после таймера забытая информация не восстанавливается.</li>
+<li><strong>F4 переключает персонажа между сторонами.</strong> У гражданских, российской стороны и США раздельная память; вернувшись к прежней стороне, продолжаешь её персонажа с учётом NLR. Уход от активной сцены через F4 — Combat Log.</li>
 </ol>
 <h2>Что карается чаще всего</h2>
-<table>
+<div aria-label="Таблица правил — при необходимости прокрутите по горизонтали" class="table-scroll" role="region" tabindex="0"><table>
 <thead>
 <tr>
-<th>Нарушение</th>
-<th>Наказание</th>
+<th scope="col">Нарушение</th>
+<th scope="col">Наказание</th>
 </tr>
 </thead>
 <tbody>
@@ -195,24 +160,23 @@ hr{border:0;border-top:1px solid #232427;margin:34px 0}
 <td>Снятие прав + Ban 7 дней – PermBan</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Роли</h2>
 <ul>
-<li><strong>Гражданские:</strong> Гражданский · Торговец оружием · Медик · Автомеханик. Профессия — <code>/rp Медик</code> (до 32 символов).</li>
+<li><strong>Гражданские:</strong> Гражданский · Торговец оружием · Медик · Автомеханик · Оружейник. Профессия — <code>/rp Медик</code> (до 32 символов).</li>
 <li><strong>Торговец оружием</strong> сам назначает цену; сервер списывает закупку — прибыль = наценка.</li>
 <li><strong>США:</strong> Рядовой · Капрал · Сержант · Командир Отряда.</li>
-<li><strong>ЧВК «Вагнер»:</strong> Рядовой · Сержант · Лейтенант.</li>
-<li><strong>ВС РФ:</strong> Рядовой · Ефрейтор · Сержант · Мл. Лейтенант.</li>
-<li><strong>ИГИЛ:</strong> Боец · Медик · Командир отряда · <strong>Оружейник</strong> — единственный, у кого работает станок.</li>
+<li><strong>ВС РФ:</strong> Рядовой · Ефрейтор · Сержант · Мл. Лейтенант. В составе российской стороны — Сербский добровольческий корпус «Дрина»: добровольцы под российским командованием, пехота и штурмовые группы.</li>
+<li><strong>Оружейник:</strong> единственная роль с доступом к станку; снабжение и торговля оружием. Относится к гражданским ролям.</li>
 </ul>
 <h2>Военным — поверх общего</h2>
 <ul>
-<li><strong>Приказ обязателен.</strong> Приказ, нарушающий правила сервера, не выполняется — и это не дезертирство.</li>
-<li><strong>Огонь:</strong> предупреждение → соразмерность → только по угрозе и сопротивлению. Сбегающего безоружного не расстреливают, раненого не добивают.</li>
+<li><strong>Приказ обязателен.</strong> Приказ, нарушающий правила сервера, не выполняется — и это не дезертирство. Командир отвечает за запрещённый приказ, исполнитель — за совершённые им нарушения.</li>
+<li><strong>Огонь:</strong> в боевом столкновении опознанного противника разрешено атаковать без предупреждения; засады и добивание раненого противника допускаются по 6.3. Задержание вне боя требует предупреждения. Уже установленный плен, гражданские и защищённые зоны регулируются отдельными ограничениями.</li>
 <li><strong>Гражданские</strong> — не мишени. Перестрелка в жилом квартале — ответственность начавшего и командира.</li>
 <li><strong>Форма</strong> — открыто. Маскировка под противника только с согласованием.</li>
-<li><strong>Радио и координаты — только в игре.</strong> Слив вне игры = MetaGaming, Ban 1–3 дня.</li>
-<li><strong>Пленный:</strong> до 15 минут плена, без бессмысленного урона, казнь — только по веской причине и с отыгрышем.</li>
+<li><strong>Телефон и рация — IC по умолчанию.</strong> Заранее обозначенная реплика «по нон РП» считается OOC: персонажи не используют её содержание. Координаты, приказы и доклады передаются средствами игры; слив вне игры — MetaGaming (1.4, 6.6).</li>
+<li><strong>Пленный:</strong> судьбу персонажа решает захватившая сторона в пределах правил. До 15 минут без содержательного отыгрыша, до 30 минут суммарно при продолжающейся сцене. Казнь — только по вескому IC-основанию; жестокие эпизоды можно оставить «за кадром». Беспричинное насилие запрещено (3.7, 6.7).</li>
 <li><strong>Ответ двойной:</strong> трибунал внутри фракции (IC) + правила сервера (OOC).</li>
 </ul>
 <h2>Полезное</h2>
@@ -223,27 +187,37 @@ hr{border:0;border-top:1px solid #232427;margin:34px 0}
 <li><code>/rp help</code> и <code>vcity_rp_help</code> — справка в чате.</li>
 <li>Жалобы и апелляции — <strong>вне игры</strong>, в Discord, в течение 24 часов, со скриншотом или записью.</li>
 </ul>
-<p><em>Полная версия — «ПРАВИЛА.md» / rules.html. Версия памятки 1.0, синхронно со сборкой 0.3.4.</em></p>
-    </section>
-    <h1>V-CITY RP — ПРАВИЛА СЕРВЕРА</h1>
-
-<p><strong>Локация:</strong> Сирия, провинция Дейр-эз-Зор · <strong>Уровень:</strong> Medium RP (для военных фракций — Hard RP, см. раздел 6)
-<strong>Версия документа:</strong> 1.0 · <strong>Проверено по сборке:</strong> 0.3.4</p>
+<p>Полная версия — «V-City RP — правила 2028.md» / «V-City RP — правила 2028.html». Версия памятки 1.8. Описание механик сохранено из исходной редакции для сборки 0.3.4.</p>
+</section></details>
+<h1>V-CITY RP — ПРАВИЛА СЕРВЕРА</h1>
+<p><strong>Локация:</strong> континентальная Северная Америка, 2028 год · <strong>Уровень:</strong> Medium RP для всех ролей (для военных дополнительно действует устав, см. раздел 6)
+<strong>Версия документа:</strong> 1.8 · <strong>Проверено по сборке:</strong> 0.3.4</p>
 <blockquote>
-<p>Сервер — художественная игровая площадка. Фракции и конфликты вымышлены и не связаны с реальной
-политикой, религией, государствами и организациями. Правила регулируют <strong>игру</strong>, а не реальный мир.</p>
+<p>Сервер — художественная игровая площадка в жанре альтернативной истории. События 2028 года, политические изменения и ход войны относятся только к вымышленному лору V-City RP и не являются описанием реальных событий или прогнозом. Упоминания государств, организаций и публичных лиц используются в игровом контексте. Правила регулируют игру, а не реальный мир.</p>
 </blockquote>
-<hr />
-<h2 id="_1"><a class="toclink" href="#_1">Как читать эти правила</a></h2>
+<hr/>
+<section class="lore" id="lore">
+<h1>Лор сервера — 2028 год</h1>
+<p><strong>Место действия:</strong> континентальная Северная Америка. <strong>Время действия:</strong> 2028 год.</p>
+<h2>Мир на пороге войны</h2>
+<p>США вышли из НАТО, однако международная напряжённость продолжает нарастать. Прежний порядок меняется, а отношения между государствами становятся всё более нестабильными.</p>
+<p>За два месяца до начала событий сервера Дональд Трамп ушёл в отставку с поста президента США. В России по итогам выборов победила оппозиция. На фоне этих политических перемен кризис перерос в открытую войну между Россией и США.</p>
+<h2>Начало боевых действий</h2>
+<p>Российские десантные подразделения быстро высадились на территории континентальной Северной Америки. Однако стремительное начало операции обернулось огромными потерями среди военнослужащих ВДВ. Высадка не принесла быстрой победы: война продолжается.</p>
+<h2>Текущая обстановка</h2>
+<p>К моменту начала событий сервера идёт кровопролитная война. Российские и американские подразделения продолжают боевые действия на североамериканском континенте. Победа не предрешена, а тяжёлые потери остаются частью текущей обстановки.</p><p>На российской стороне действует <strong>Сербский добровольческий корпус «Дрина»</strong>, сформированный из бывших военнослужащих Сербии и добровольцев из сербской диаспоры. Формально это не регулярная армия: корпус подчинён российскому командованию, выполняет пехотные и штурмовые задачи и получает лишь доведённую до него часть оперативных планов.</p>
+<p>Игроки отыгрывают персонажей в условиях этой войны. Актуальную линию фронта, границы контролируемых территорий и задачи подразделений определяют администрация и игровые события. Общий лор не даёт персонажу знания чужих позиций, планов и приказов.</p>
+<p><strong>Война не отменяет правил сервера.</strong> FearRP, NLR, запреты на FreeKill, TeamKill и спавн-килл, защита гражданских и правила обращения с пленными действуют в полном объёме. Конкретные боевые ситуации регулируются общими правилами и разделом 6.</p>
+</section><hr/><h2 id="_1"><a class="toclink" href="#_1">Как читать эти правила</a></h2>
 <ul>
 <li><strong>Разделы 1–4</strong> — общие для всех: принципы RP, нарушения, убийства и урон, адекватность и администрация.</li>
 <li><strong>Раздел 5</strong> — роли и фракции: кто чем занимается и что можно каждой роли.</li>
-<li><strong>Раздел 6</strong> — расширенный устав для военных фракций: США, ЧВК «Вагнер», ВС РФ и боевого крыла ИГИЛ.</li>
+<li><strong>Раздел 6</strong> — расширенный устав для военных фракций: США и ВС РФ.</li>
 <li><strong>Разделы 7–9</strong> — сводная таблица наказаний, команды сервера, порядок изменения правил.</li>
 <li>Если правило можно трактовать двояко — вы трактуете его в свою пользу, значит трактовка неверная.
   Спросите администрацию <strong>до</strong> действия.</li>
 </ul>
-<hr />
+<hr/>
 <h1 id="1-roleplay"><a class="toclink" href="#1-roleplay">1. Главные принципы RolePlay</a></h1>
 <h2 id="11"><a class="toclink" href="#11">1.1. Обязательный отыгрыш</a></h2>
 <p>Вы находитесь на сервере уровня <strong>Medium RP</strong>. Любое действие, не зафиксированное системно или
@@ -252,7 +226,7 @@ hr{border:0;border-top:1px solid #232427;margin:34px 0}
 <p>Механические действия (стрельба, передача предметов, ремонт машины, торговля) отыгрываются
 <strong>до или одновременно</strong> с их выполнением, а не задним числом. Формула «сначала сделал, потом
 придумал причину» — это NonRP.</p>
-<p><em>Наказание:</em> Предупреждение / Jail 15–30 минут.</p>
+<p><strong>Активный бой.</strong> В разрешённом боевом столкновении и при немедленной самообороне не требуется набирать отдельный <code>/me</code> перед каждым выстрелом: действие показано механикой. Это исключение не создаёт IC-причину задним числом и не отменяет отыгрыш обыска, захвата и других действий, которым нужен отдельный контекст.</p><p class="penalty"><em>Наказание:</em> Предупреждение / Jail 15–30 минут.</p>
 <h2 id="12-me"><a class="toclink" href="#12-me">1.2. Команда /me — основной инструмент отыгрыша</a></h2>
 <p><code>/me</code> используется для описания действий вашего персонажа <strong>от третьего лица</strong> в настоящем или
 прошедшем времени. Формат: действие, а не реплика. Примеры:</p>
@@ -283,7 +257,7 @@ hr{border:0;border-top:1px solid #232427;margin:34px 0}
 <li>погибший персонаж не может разговаривать с живыми: его реплику видят только погибшие игроки — так же,
   как устроен обычный чат сервера;</li>
 </ul>
-<p><em>Наказание:</em> Предупреждение / Mute IC-чата 10–20 минут (при злоупотреблении или неверном формате).</p>
+<p class="penalty"><em>Наказание:</em> Предупреждение / Mute IC-чата 10–20 минут (при злоупотреблении или неверном формате).</p>
 <h2 id="13-fearrp"><a class="toclink" href="#13-fearrp">1.3. Принцип FearRP (страх за жизнь)</a></h2>
 <p>Ваш персонаж обязан ценить свою жизнь. Если вы <strong>без оружия в руках</strong> (или не успели его обнажить),
 а перед вами вооружённый противник — вы обязаны подчиняться его требованиям: остановиться, поднять
@@ -293,103 +267,95 @@ hr{border:0;border-top:1px solid #232427;margin:34px 0}
 <p><strong>Исключения:</strong></p>
 <ul>
 <li>на вас насильно (не по своей воле) надели пояс смертника;</li>
-<li>отыгрыш персонажа спецподразделения / ЧВК — при наличии одобренной биографии/анкеты
+<li>отыгрыш персонажа спецподразделения — при наличии одобренной биографии/анкеты
   (полное уточнение по анкетам выйдет отдельно);</li>
 <li>ситуация, в которой персонаж <strong>уже</strong> ведёт бой и отступление невозможно.</li>
 </ul>
-<p><em>Наказание:</em> Jail 30–60 минут / Ban от 1 до 3 дней (при систематическом игнорировании).</p>
+<p class="penalty"><em>Наказание:</em> Jail 30–60 минут / Ban от 1 до 3 дней (при систематическом игнорировании).</p>
 <h2 id="14-ic-ooc"><a class="toclink" href="#14-ic-ooc">1.4. Разделение IC и OOC</a></h2>
 <p>IC — всё, что происходит с персонажем: его слова, дела, знания, отношения.
 OOC — всё, что знаете вы как игрок.</p>
-<ul>
-<li>OOC-информация <strong>не влияет</strong> на игровые решения персонажа (см. 2.3, MetaGaming).</li>
-<li>OOC-переписка — только в OOC-чат, и она не должна мешать сцене.</li>
-<li>Голосовой чат в игре — IC. Если вы говорите голосом персонажа, держитесь его манеры речи и не
-  выпадайте из контекста сцены. Случайные
-  OOC-крики в микрофон посреди перестрелки — LowRP (см. 2.4).</li>
-<li>Личные конфликты, выяснения «кто прав» и разбор нарушений — <strong>вне игры</strong> (жалоба администрации), не в IC.</li>
-</ul>
+<ul><li>OOC-информация <strong>не влияет</strong> на игровые решения персонажа (см. 2.3, MetaGaming).</li><li>OOC-переписка ведётся в OOC-чате. В голосе, по игровому телефону и по рации допускаются отдельные явно обозначенные OOC-реплики, не мешающие сцене; порядок — ниже.</li><li><strong>Голос, телефон и рация.</strong> Сказанное в игровом голосовом чате, по игровому телефону или по рации по умолчанию считается IC-информацией, доступной тем персонажам, которые действительно слышат разговор. Реплики персонажа должны соответствовать текущей сцене.</li><li><strong>Явная пометка OOC.</strong> Если говорящий заранее обозначил реплику словами «по нон РП», «OOC» или равнозначным понятным уточнением, её содержание считается OOC и не воспринимается персонажами как IC-информация. Полученные таким образом сведения нельзя использовать для IC-решений, обвинений, приказов или мести.</li><li><strong>Пример:</strong> «По нон РП — АК-74М, как по мне, лучше АК-12». Это мнение игрока, а не высказывание его персонажа. Без такой пометки та же фраза, сказанная по телефону или рации, по умолчанию является IC-репликой.</li><li><strong>Границы пометки.</strong> Уточнение относится к обозначенной реплике или явно оговорённой OOC-части разговора, а не автоматически ко всему каналу. Нельзя задним числом объявлять уже сказанное «нон РП», срывать сцену OOC-разговором или использовать пометку для обхода правил. После возвращения к разговору персонажей снова действует IC-режим по умолчанию.</li><li>Личные конфликты, выяснения «кто прав» и разбор нарушений — <strong>вне игры</strong> (жалоба администрации), не в IC.</li></ul>
 <h2 id="15"><a class="toclink" href="#15">1.5. Имя персонажа и внешность</a></h2>
 <p>Ник должен читаться как имя персонажа, без оскорблений, символов и «клоунских» конструкций.
 Внешность персонажа задаётся администрацией (модель, скин, экипировка роли); самовольно
 менять внешность, чтобы выдать себя за другую фракцию, нельзя (см. 6.4).</p>
-<h2 id="16-nlr-no-life-rule"><a class="toclink" href="#16-nlr-no-life-rule">1.6. NLR — новая жизнь (No Life Rule)</a></h2>
-<p>После смерти персонаж <strong>забывает обстоятельства своей гибели</strong> и не помнит, кто его убил
-(если это не было известно ему до смерти). В течение <strong>5 минут</strong> после возрождения запрещено:</p>
+<h2 id="16-nlr-no-life-rule"><a class="toclink" href="#16-nlr-no-life-rule">1.6. NLR — новая жизнь (New Life Rule)</a></h2>
+<p><strong>NLR — New Life Rule.</strong> После смерти и возрождения персонаж забывает конкретный эпизод, который привёл к его гибели: кто его убил, обстоятельства столкновения и полученные только в этом эпизоде сведения. Более ранняя биография, знакомства и события, не связанные с этим эпизодом, сохраняются.</p>
 <ul>
-<li>возвращаться на место гибели;</li>
-<li>мстить конкретному игроку или его фракции за свою смерть;</li>
-<li>сообщать своей фракции координаты и детали боя, которые «узнали» после смерти.</li>
+<li><strong>Возвращение — через 2 минуты.</strong> В течение <strong>2 минут с момента возрождения</strong> нельзя намеренно возвращаться непосредственно к месту своей гибели. Это место и ближайшая область той же сцены, а не весь город, район или карта. Сам выход с базы не запрещён. Случайное появление в этой зоне из-за серверной точки возрождения не считается намеренным возвращением: не используйте его для продолжения прежнего эпизода.</li>
+<li><strong>После таймера.</strong> По истечении двух минут можно снова оказаться в этом месте и участвовать в новых игровых событиях на общих основаниях. Нет обязанности ждать окончания всей войны или освобождения целого района. Однако прежняя память не возвращается, и таймер не разрешает целенаправленно возобновлять личную месть или использовать забытые позиции, маршруты и планы.</li>
+<li><strong>Новые сведения.</strong> После возрождения персонаж может заново получить информацию из происходящих в игре докладов, приказов и наблюдений. Это создаёт новые знания, но не восстанавливает личные воспоминания о собственной смерти. Нельзя подсказывать другим игрокам забытые сведения, чтобы получить их обратно как якобы новый доклад.</li>
+<li><strong>Месть за собственную смерть запрещена всегда.</strong> Двухминутный срок относится только к возвращению в место гибели. Он не ограничивает длительность запрета использовать забытые события.</li>
+<li><strong>Раздельная память.</strong> Возвращение к персонажу прежней стороны сохраняет его историю с учётом этой утраты памяти. Переключение стороны, роли, перезаход или ожидание таймера не отменяют NLR. Ранение, потеря сознания и лечение без смерти и возрождения сами по себе память не стирают.</li>
 </ul>
-<p><em>Наказание:</em> Jail 15–30 минут. Повторно — Jail 30–60 минут.</p>
+<p class="penalty"><em>Наказание:</em> Jail 15–30 минут. Повторно — Jail 30–60 минут.</p>
 <h2 id="17-combat-log"><a class="toclink" href="#17-combat-log">1.7. Combat Log (выход из игры во время ситуации)</a></h2>
 <p>Запрещено выходить из игры, отключаться, уходить в наблюдатели или <strong>менять роль через F4</strong>,
 чтобы избежать последствий: боя, плена, обыска, задержания, долга, разговора с администрацией.</p>
-<p><em>Наказание:</em> Jail 30–60 минут / Ban от 1 до 3 дней (за злостные случаи).</p>
+<p class="penalty"><em>Наказание:</em> Jail 30–60 минут / Ban от 1 до 3 дней (за злостные случаи).</p>
 <h2 id="18"><a class="toclink" href="#18">1.8. Приоритет правил</a></h2>
 <ol>
-<li>Правила сервера <strong>выше</strong> любых IC-приказов, договорённостей, «уставов» и RP-поводов.</li>
+<li>Правила сервера <strong>выше</strong> любых IC-приказов, договорённостей, «уставов» и RP-поводов.</li><li>Командир отвечает за приказ нарушить правила; исполнитель — за совершённое им нарушение при выполнении такого приказа. Само получение приказа не является нарушением. Отказ выполнить приказ, нарушающий правила сервера, не наказывается.</li>
 <li>Приказ, требующий нарушить правила сервера, не выполняется — и это <strong>не</strong> считается
    нарушением субординации или дезертирством (для военных — см. 6.2).</li>
 <li>Незнание правил не является оправданием.</li>
 <li>Спорные ситуации трактует администрация. Решение администратора можно оспорить
    только через апелляцию (см. 4.6), а не в IC.</li>
 </ol>
-<hr />
+<hr/>
 <h1 id="2-roleplay-rp"><a class="toclink" href="#2-roleplay-rp">2. Нарушения RolePlay (RP)</a></h1>
 <h2 id="21-nonrp-non-roleplay"><a class="toclink" href="#21-nonrp-non-roleplay">2.1. NonRP (Non-RolePlay)</a></h2>
 <p>Поведение, противоречащее логике реального мира или роли вашего персонажа: прыжки с крыш без
 последствий, разговоры после тяжёлого ранения, использование предметов не по назначению «для
 смеха», игнорирование боли и травм, поведение, невозможное для вашей роли (гражданский в фартуке
 командует военным отрядом).</p>
-<p><em>Наказание:</em> Jail 20–40 минут.</p>
+<p class="penalty"><em>Наказание:</em> Jail 20–40 минут.</p>
 <h2 id="22-powergaming-pg"><a class="toclink" href="#22-powergaming-pg">2.2. PowerGaming (PG)</a></h2>
 <p>Преувеличение возможностей персонажа: нападение с кулаками на человека с автоматом, отыгрыш
 «супергероя», единоличный захват базы, отказ признавать ранения и плен, описание своих действий
 за чужих персонажей через <code>/me</code>.</p>
-<p><em>Наказание:</em> Jail 30–60 минут.</p>
+<p class="penalty"><em>Наказание:</em> Jail 30–60 минут.</p>
 <h2 id="23-metagaming-mg"><a class="toclink" href="#23-metagaming-mg">2.3. MetaGaming (MG)</a></h2>
-<p>Использование OOC-информации в IC-процессе: знание из Discord, стримов, админ-чата, чужих
-переписок, снайпинг стримера, передача координат противника «по дружбе» в личку, слушание чужого
-голосового канала фракции.</p>
-<p><em>Наказание:</em> Mute 20–30 минут / Jail 30 минут. За умышленный слив важной информации —
+<p>Использование OOC-информации в IC-процессе: сведения из Discord, стримов, админ-чата, чужих внешних переписок, снайпинг стримера, передача игровых координат в личку и OOC-доступ к закрытому голосовому каналу другой фракции. Разрешённое прослушивание средствами игровой механики оценивается по 6.6 и само по себе не является MetaGaming.</p><p>Использование в IC сведений из явно обозначенной OOC-реплики по телефону, рации или голосовому чату также является MetaGaming. Сам факт передачи через игровое устройство не превращает реплику с предварительной пометкой «по нон РП» в IC-информацию (1.4).</p>
+<p class="penalty"><em>Наказание:</em> Mute 20–30 минут / Jail 30 минут. За умышленный слив важной информации —
 Ban от 1 до 3 дней.</p>
 <h2 id="24-lowrp"><a class="toclink" href="#24-lowrp">2.4. LowRP и срыв погружения</a></h2>
 <p>Игровое «цирковое» поведение, не вызванное сценой: танцы под обстрелом, крики и музыка в микрофон
 посреди отыгрыша, намеренное создание хаоса в городе без причины, провокации администрации
 через отыгрыш.</p>
-<p><em>Наказание:</em> Jail 20–40 минут / Mute 30–60 минут.</p>
+<p class="penalty"><em>Наказание:</em> Jail 20–40 минут / Mute 30–60 минут.</p>
 <h2 id="25"><a class="toclink" href="#25">2.5. Отыгрыш ради обхода правил</a></h2>
 <p>RP-повод не отменяет правил. «Мой персонаж психически нездоров, поэтому убил прохожего»,
 «мой персонаж не боится смерти» и подобное — не защита от NonRP, PG, FearRP и FK.</p>
-<p><em>Наказание:</em> по статье, которую пытались обойти, + Jail 30 минут сверху.</p>
-<hr />
+<p class="penalty"><em>Наказание:</em> по статье, которую пытались обойти, + Jail 30 минут сверху.</p>
+<hr/>
 <h1 id="3"><a class="toclink" href="#3">3. Нарушения правил убийств и урона</a></h1>
 <h2 id="31-freedamage"><a class="toclink" href="#31-freedamage">3.1. FreeDamage</a></h2>
 <p>Нанесение урона игроку или его транспорту без весомой IC-причины и предварительного отыгрыша
-(«для проверки», «просто задел», «стрельнул в воздух рядом»).</p>
-<p><em>Наказание:</em> Jail 30–45 минут.</p>
+(«для проверки», «просто задел», «стрельнул в воздух рядом»). Для активного боя и немедленной самообороны применяется исключение 1.1; отсутствие отдельного /me перед выстрелом в такой ситуации само по себе не является FreeDamage.</p>
+<p class="penalty"><em>Наказание:</em> Jail 30–45 минут.</p>
 <h2 id="32-freekill-rdm-random-deathmatch"><a class="toclink" href="#32-freekill-rdm-random-deathmatch">3.2. FreeKill / RDM (Random Deathmatch)</a></h2>
 <p>Убийство одного игрока без весомой IC-причины.</p>
-<p><em>Наказание:</em> Jail 60 минут / Ban от 1 до 3 дней.</p>
+<p class="penalty"><em>Наказание:</em> Jail 60 минут / Ban от 1 до 3 дней.</p>
 <h2 id="33-mass-rdm-mrdm"><a class="toclink" href="#33-mass-rdm-mrdm">3.3. Mass RDM (MRDM)</a></h2>
 <p>Убийство двух и более игроков без весомой IC-причины.</p>
-<p><em>Наказание:</em> Ban от 7 до 30 дней / Перманентный бан.</p>
+<p class="penalty"><em>Наказание:</em> Ban от 7 до 30 дней / Перманентный бан.</p>
 <h2 id="34-teamkill-tk"><a class="toclink" href="#34-teamkill-tk">3.4. TeamKill (TK)</a></h2>
 <p>Убийство членов своей фракции/группировки без весомой IC-причины. Внутренние разборки, конфликты
 командиров и «войны» внутри фракции решаются IC-способами (трибунал, изгнание, сюжет) и не
 оправдывают убийство.</p>
-<p><em>Наказание:</em> Jail 45–60 минут / Ban на 1 день.</p>
+<p class="penalty"><em>Наказание:</em> Jail 45–60 минут / Ban на 1 день.</p>
 <h2 id="35-vdm-vehicle-deathmatch"><a class="toclink" href="#35-vdm-vehicle-deathmatch">3.5. VDM (Vehicle Deathmatch)</a></h2>
 <p>Использование транспорта как оружия: таран людей или машин без IC-причины, «прокатка» толпы,
 целенаправленное сбивание пешеходов.</p>
-<p><em>Наказание:</em> Jail 30–60 минут. При массовых жертвах — как за Mass RDM.</p>
+<p class="penalty"><em>Наказание:</em> Jail 30–60 минут. При массовых жертвах — как за Mass RDM.</p>
 <h2 id="36-"><a class="toclink" href="#36-">3.6. Спавн-килл и кемпинг точек появления</a></h2>
 <p>Убийство или блокировка игроков в зонах появления, у больницы, у магазинов и иных «тыловых»
 точках, а также систематический обстрел места, где человек только что возродился.</p>
-<p><em>Наказание:</em> Jail 45–60 минут / Ban на 1 день (при систематике).</p>
+<p class="penalty"><em>Наказание:</em> Jail 45–60 минут / Ban на 1 день (при систематике).</p>
 <h2 id="37"><a class="toclink" href="#37">3.7. Нападение, ограбление, похищение — как это делается правильно</a></h2>
-<p>Разрешено только при выполнении <strong>всех</strong> условий:</p>
+<p>Условия ниже обязательны при <strong>задержании, ограблении и похищении вне активного боевого столкновения</strong>. Открытие огня и действия против опознанного противника в текущем бою регулируются 6.3; для них не требуется сначала предъявлять требование сдаться. Правила уже установленного плена действуют независимо от боя.</p>
 <ol>
 <li>Есть весомая IC-причина (конфликт, долг, задание фракции, война, месть по сюжету).</li>
 <li>Есть <strong>предварительный отыгрыш</strong>: <code>/me</code> с оружием, требование, угроза, предупреждение.</li>
@@ -398,39 +364,44 @@ Ban от 1 до 3 дней.</p>
 </ol>
 <p><strong>Плен и похищение:</strong></p>
 <ul>
-<li>Максимальный срок плена без отыгрыша — <strong>15 минут</strong>; продление только через сцену
-  (перемещение, торг, допрос) и не более 30 минут суммарно.</li>
-<li>Пленному нельзя наносить урон без причины: избиение «для атмосферы» без сцены — FreeDamage.</li>
-<li>Запрещено приковывать/удерживать игрока, когда он отошёл (AFK) — освободите или дождитесь.</li>
-<li>Казнь пленного допускается только при весомой IC-причине (приговор фракции, обмен провален,
-  приказ командира) и с отыгрышем. Казнь «чтобы не возиться» — FreeKill.</li>
-</ul>
+<li><strong>Судьба пленного.</strong> Решение о дальнейшем удержании, освобождении, обмене или казни принимает захватившая сторона в рамках своей роли, субординации и правил сервера. Плен не гарантирует персонажу выживание, но не даёт захватившим права на беспричинное убийство или издевательство над игроком.</li>
+<li><strong>Срок.</strong> Максимальный срок плена без содержательного отыгрыша — <strong>15 минут</strong>. Продление допускается только при продолжающейся сцене (перемещение, переговоры, допрос), но не более <strong>30 минут суммарно</strong> с момента захвата. Формальные реплики и передача другому отряду не обнуляют срок; по его окончании плен завершают освобождением или другой допустимой развязкой.</li>
+<li><strong>Казнь.</strong> Допускается как исключительная сюжетная развязка при весомой, возникшей до решения о казни IC-причине и предварительном отыгрыше. Приговор или приказ командира должен опираться на события сцены; сам по себе приказ, принадлежность к вражеской фракции, провал обмена или отказ сообщить сведения не являются достаточным основанием. Убийство «чтобы не возиться», ради лута, развлечения или завершения истекающего срока — <strong>FreeKill</strong>. Личная месть за достоверно установленное убийство сослуживца или друга также может быть допустимым IC-мотивом; условия и запреты приведены ниже.</li>
+<li><strong>Жестокие эпизоды.</strong> Пытки и казни не являются обязательной или рекомендуемой частью отыгрыша. Они допустимы лишь как ограниченный эпизод обоснованной RP-сцены, без натуралистичных описаний и демонстраций. Любой участник вправе потребовать оставить жестокий эпизод «за кадром»; это требование обязательно и не считается нарушением FearRP.</li>
+<li><strong>Границы и исход.</strong> Без отдельного OOC-согласия нельзя навязывать подробный отыгрыш пыток, увечий или отдельно согласуемых постоянных последствий. Согласие можно отозвать: подробный эпизод прекращают или оставляют за кадром. Отказ от подробностей сам по себе не отменяет допустимые по правилам захват, урон и игровую смерть. Согласие на жестокую сцену не разрешает запрещённое убийство. Окончательное удаление персонажа, если оно предусмотрено сервером, требует отдельного установленного порядка; обычная игровая смерть регулируется NLR.</li>
+<li><strong>Без злоупотреблений.</strong> Запрещены повторяющиеся жестокие сцены ради самих сцен, циклы нанесения урона и лечения для продления мучений, травля одного игрока, сексуализированное насилие и перенос OOC-конфликтов в плен. Ссылка на «жестокость мира» не оправдывает нарушение. Урон без обоснованной игровой необходимости — <strong>FreeDamage</strong>; убийство без допустимой IC-причины — <strong>FreeKill</strong>.</li>
+<li><strong>AFK.</strong> Запрещено начинать или продолжать насильственные действия над персонажем игрока, который отошёл. При внезапном AFK приостановите сцену и при необходимости обратитесь к администрации; AFK не даёт права на казнь. Намеренный уход от активной сцены разбирается отдельно по правилам Combat Log.</li>
+</ul><div id="kill-motives"><h3>IC-причины убийства пленных и раненых</h3>
+<p><strong>Допустимо:</strong> персонаж достоверно знает из IC-событий, что именно этот пленный или раненый убил его сослуживца либо друга. В таком случае убийство на почве личной мести или сильной эмоциональной реакции допускается как RP-поступок. Причина должна существовать до убийства и быть показана в сцене словами или кратким отыгрышем; формального приговора для такого эмоционального поступка не требуется. Возможные последствия по уставу и внутри сюжета сохраняются.</p>
+<p><strong>Недостаточно:</strong> фразы «я на эмоциях», «он враг» или «кто-то из его фракции убил моего друга» без связи с конкретным персонажем. Нельзя придумывать знакомство, гибель друга или виновность задним числом. Сведения из OOC, месть за собственную смерть и воспоминания, утраченные по NLR, не являются допустимым основанием.</p>
+<p><strong>Запрещено:</strong> убивать пленного или раненого из-за расы, цвета кожи, национальности или религии. Дискриминационный мотив нельзя оправдать лором, приказом, эмоциями или «характером персонажа». Если допустимая IC-причина отсутствует, применяется FreeKill; проявления расизма и реальной ненависти дополнительно рассматриваются по пункту 4.1. Само наличие сюжетного конфликта не разрешает расистские оскорбления.</p>
+<p>Эти основания действуют и для пленных, и для раненых вне продолжающегося боя. Правила применения силы в текущем боевом столкновении определены в 6.3. Допустимый мотив не отменяет ограничений на жестокие сцены, травлю и OOC-конфликты.</p></div>
 <p><strong>Обыск и изъятие:</strong> обыск всегда отыгрывается (<code>/me</code>), изъятие предметов идёт через меню
 взаимодействия по <strong>E</strong>. Механика требует согласия обеих сторон — если вы под прицелом, отказ
 подтвердить передачу предмета противоречит FearRP. Обчищать до нуля необязательно: решайте IC.</p>
-<p><em>Наказание за нарушения этого пункта:</em> Jail 30–60 минут, при казни без причины — как за FreeKill.</p>
-<hr />
+<p class="penalty"><em>Наказание за нарушения этого пункта:</em> Jail 30–60 минут, при казни без причины — как за FreeKill.</p>
+<hr/>
 <h1 id="4"><a class="toclink" href="#4">4. Адекватность, баги и администрация</a></h1>
 <h2 id="41"><a class="toclink" href="#41">4.1. Неадекватное поведение</a></h2>
 <p>Чрезмерный токсицизм, намеренное вредительство серверу, спам, крики в микрофон и намеренный срыв
 RP-погружения других игроков. Отдельно и строго: разжигание реальной ненависти по национальному,
 религиозному, политическому и любому другому реальному признаку — это не «отыгрыш фракции».</p>
-<p><em>Наказание:</em> Mute/Gag 30–120 минут / Ban от 1 до 7 дней. За реальную ненависть — Ban от 7 дней до перманентного.</p>
+<p class="penalty"><em>Наказание:</em> Mute/Gag 30–120 минут / Ban от 1 до 7 дней. За реальную ненависть — Ban от 7 дней до перманентного.</p>
 <h2 id="42-bug-abuse"><a class="toclink" href="#42-bug-abuse">4.2. Bug Abuse</a></h2>
 <p>Использование багов игры, движка, карты или сборки для получения преимущества. При обнаружении
 бага игрок обязан сообщить администрации, а не пользоваться им.</p>
-<p><em>Наказание:</em> Jail 60 минут / Ban от 3 до 14 дней (в зависимости от полученной выгоды).</p>
+<p class="penalty"><em>Наказание:</em> Jail 60 минут / Ban от 3 до 14 дней (в зависимости от полученной выгоды).</p>
 <h2 id="43-adminabuse"><a class="toclink" href="#43-adminabuse">4.3. AdminAbuse</a></h2>
 <p>Использование административных полномочий (TP, noclip, выдача оружия/денег, спавн предметов,
 телепорт игроков) в личных целях или во время IC-процесса.</p>
-<p><em>Наказание:</em> Снятие административных прав + Ban от 7 дней до перманентного.</p>
+<p class="penalty"><em>Наказание:</em> Снятие административных прав + Ban от 7 дней до перманентного.</p>
 <h2 id="44"><a class="toclink" href="#44">4.4. Стороннее ПО и читы</a></h2>
 <p>Wallhack, aim, любые скрипты и макросы, дающие преимущество, а также попытки обойти систему
 логирования — перманентный бан без апелляции.</p>
 <h2 id="45"><a class="toclink" href="#45">4.5. Обман администрации, ложные вызовы</a></h2>
 <p>Ложная жалоба, подделка доказательств, попытка «переиграть» наказание ложью, намеренный ввод
 администратора в заблуждение.</p>
-<p><em>Наказание:</em> Jail 30–60 минут / Ban от 1 до 7 дней.</p>
+<p class="penalty"><em>Наказание:</em> Jail 30–60 минут / Ban от 1 до 7 дней.</p>
 <h2 id="46"><a class="toclink" href="#46">4.6. Жалобы и апелляции</a></h2>
 <ol>
 <li>Жалоба подаётся <strong>вне игры</strong> (Discord/форум) в течение 24 часов с доказательствами: скриншот,
@@ -440,12 +411,12 @@ RP-погружения других игроков. Отдельно и стр�
 <li>Разбор нарушений в IC (в том числе «я пожалуюсь админу» под прицелом) — MetaGaming.</li>
 <li>Администрация вправе запросить запись экрана у участников конфликта.</li>
 </ol>
-<hr />
+<hr/>
 <h1 id="5"><a class="toclink" href="#5">5. Роли и фракции</a></h1>
 <h2 id="51"><a class="toclink" href="#51">5.1. Как работает система ролей</a></h2>
 <ul>
-<li>Меню ролей — <strong>F4</strong>. Смена роли применяется через <strong>переспавн</strong> и имеет задержку (по умолчанию 30 секунд).</li>
-<li><strong>Смена роли = смена персонажа.</strong> Знакомства, долги, конфликты, «знания» не переносятся.</li>
+<li>Меню ролей — <strong>F4</strong>. Смена роли применяется через <strong>переспавн</strong> и имеет задержку (по умолчанию 30 секунд).</li><li><strong>Внутри стороны.</strong> Смена гражданской профессии или должности внутри той же стороны сама по себе не создаёт нового персонажа. ВС РФ и корпус «Дрина» относятся к одной российской стороне; переход между ними не даёт новой памяти или права забыть последствия. Ограничения доступа и назначения на роли сохраняются.</li><li><strong>Память не общая.</strong> События, контакты, планы, долги и конфликты одного персонажа не переходят другому. Нельзя получать сведения за США и использовать их за ВС РФ либо наоборот. Переключение и возвращение не обнуляют историю прежнего персонажа и не позволяют уйти от незавершённой сцены (1.7).</li>
+<li><strong>Раздельные персонажи по сторонам.</strong> У игрока отдельный персонаж за гражданских, отдельный за российскую сторону и отдельный за США. Переход между этими сторонами переключает персонажа, а не переносит одного человека к противнику. Возвращаясь на прежнюю сторону, игрок продолжает её персонажа с его сохранённой историей и памятью, кроме событий, забытых по NLR (1.6).</li>
 <li>Спавн-набор (оружие, броня, патроны, обвесы, медикаменты) выдаёт сервер по настройке роли;
   вручную «доодеться» из воздуха нельзя.</li>
 <li>Стартовый баланс: <strong>1 000 $</strong>. Зарплата роли: <strong>200 $ каждые 10 минут</strong> по умолчанию —
@@ -457,13 +428,13 @@ RP-погружения других игроков. Отдельно и стр�
 <li>Лимиты мест во фракции и доступ по группам настраивает администрация; если роль недоступна или
   мест нет — это решение сервера, а не повод для конфликта.</li>
 </ul>
-<h2 id="52-4"><a class="toclink" href="#52-4">5.2. Вкладка «Гражданские» — 4 роли</a></h2>
-<table>
+<h2 id="52-5"><a class="toclink" href="#52-5">5.2. Вкладка «Гражданские» — 5 ролей</a></h2>
+<div aria-label="Таблица правил — при необходимости прокрутите по горизонтали" class="table-scroll" role="region" tabindex="0"><table>
 <thead>
 <tr>
-<th>Роль</th>
-<th>Что делает</th>
-<th>Особые правила</th>
+<th scope="col">Роль</th>
+<th scope="col">Что делает</th>
+<th scope="col">Особые правила</th>
 </tr>
 </thead>
 <tbody>
@@ -487,11 +458,11 @@ RP-погружения других игроков. Отдельно и стр�
 <td>Ремонт, эвакуация и обслуживание транспорта</td>
 <td>Ремонт тоже отыгрывается; таран чужого транспорта = FreeDamage</td>
 </tr>
-</tbody>
-</table>
+<tr><td><strong>Оружейник</strong></td><td>Изготавливает оружие на станке и продаёт его через IC-сделки</td><td>Гражданская роль; единственная с доступом к станку. Подчиняется правилам для гражданских и правилам мастерской (5.3)</td></tr></tbody>
+</table></div>
 <p><strong>Профессия (<code>/rp</code>).</strong> Гражданские роли могут задать себе профессию командой <code>/rp &lt;профессия&gt;</code>
 (до 32 символов, например <code>/rp Медик</code>). Это отображаемая надпись и часть отыгрыша, а <strong>не</strong> доступ к
-механикам: написать «Оружейник» гражданскому нельзя рассчитывать на станок — станок даёт только роль.</p>
+механикам: одна надпись «Оружейник» не даёт доступа к станку — нужна именно гражданская роль «Оружейник».</p>
 <p><strong>Что нельзя гражданским:</strong></p>
 <ul>
 <li>носить оружие напоказ в «безопасных» зонах без IC-причины (улица, больница, рынок) — NonRP;</li>
@@ -500,22 +471,21 @@ RP-погружения других игроков. Отдельно и стр�
   это сцена, а не раздача стволов в толпу;</li>
 <li>вступать в прямое противостояние военным без отыгрыша (без причины и сцены — PG).</li>
 </ul>
-<h2 id="53"><a class="toclink" href="#53">5.3. Оружейник (фракция ИГИЛ) — единственная роль со станком</a></h2>
+<h2 id="53"><a class="toclink" href="#53">5.3. Оружейник — единственная роль со станком</a></h2>
 <ul>
-<li>Мастерская (станок) доступна <strong>только</strong> роли «Оружейник». Боец, Медик и Командир отряда станок
-  не открывают — даже «по дружбе».</li>
+<li>Мастерская (станок) доступна <strong>только</strong> роли «Оружейник». Другие роли станок не открывают — даже «по дружбе». Оружейник относится к гражданским ролям и подчиняется общим правилам для гражданских.</li>
 <li>Производство <strong>не стоит денег</strong>: цена — мини-игра и время (кулдаун). Поэтому оружейник — это
-  экономическая и логистическая роль: снабжение своей фракции и продажа торговцу.</li>
-<li>Изготовленное оружие выдаётся сервером с настроенными обвесами; продавать его другим фракциям
-  можно только через IC-сделку и с пониманием последствий (предательство, трибунал, война).</li>
+  экономическая и логистическая роль: изготовление оружия и его продажа через IC-сделки.</li>
+<li>Изготовленное оружие выдаётся сервером с настроенными обвесами; продавать его гражданским и военным
+  можно только через IC-сделку, соблюдая правила торговли и запрет на торговлю под огнём.</li>
 <li>Использовать станок, будучи пленным, или тащить туда «клиентов» для обхода правил — NonRP/PG.</li>
 </ul>
 <h2 id="54-delta-force"><a class="toclink" href="#54-delta-force">5.4. США — Delta Force</a></h2>
-<table>
+<div aria-label="Таблица правил — при необходимости прокрутите по горизонтали" class="table-scroll" role="region" tabindex="0"><table>
 <thead>
 <tr>
-<th>Роль</th>
-<th>Позиция</th>
+<th scope="col">Роль</th>
+<th scope="col">Позиция</th>
 </tr>
 </thead>
 <tbody>
@@ -536,36 +506,13 @@ RP-погружения других игроков. Отдельно и стр�
 <td>Старший на сервере от фракции: планирует операции, представляет фракцию перед администрацией</td>
 </tr>
 </tbody>
-</table>
-<h2 id="55"><a class="toclink" href="#55">5.5. ЧВК «Вагнер»</a></h2>
-<table>
+</table></div>
+<h2 id="55"><a class="toclink" href="#55">5.5. ВС РФ</a></h2>
+<div aria-label="Таблица правил — при необходимости прокрутите по горизонтали" class="table-scroll" role="region" tabindex="0"><table>
 <thead>
 <tr>
-<th>Роль</th>
-<th>Позиция</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Рядовой</td>
-<td>Контрактник, линейный состав</td>
-</tr>
-<tr>
-<td>Сержант</td>
-<td>Командир группы, ведёт контракт</td>
-</tr>
-<tr>
-<td>Лейтенант</td>
-<td>Старший на сервере от ЧВК: приказы, переговоры, ответственность за людей</td>
-</tr>
-</tbody>
-</table>
-<h2 id="56"><a class="toclink" href="#56">5.6. ВС РФ</a></h2>
-<table>
-<thead>
-<tr>
-<th>Роль</th>
-<th>Позиция</th>
+<th scope="col">Роль</th>
+<th scope="col">Позиция</th>
 </tr>
 </thead>
 <tbody>
@@ -586,40 +533,24 @@ RP-погружения других игроков. Отдельно и стр�
 <td>Офицер: приказы фракции, ответственность за операции и людей</td>
 </tr>
 </tbody>
-</table>
-<h2 id="57"><a class="toclink" href="#57">5.7. ИГИЛ</a></h2>
-<table>
-<thead>
-<tr>
-<th>Роль</th>
-<th>Позиция</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Боец</td>
-<td>Линейный состав, действует по указанию командира</td>
-</tr>
-<tr>
-<td>Медик</td>
-<td>Оказание помощи, вынос раненых</td>
-</tr>
-<tr>
-<td>Командир отряда</td>
-<td>Старший на сервере: планирование, приказы, дисциплина</td>
-</tr>
-<tr>
-<td><strong>Оружейник</strong></td>
-<td>Единственная роль с доступом к станку; снабжение и торговля оружием</td>
-</tr>
-</tbody>
-</table>
-<hr />
+</table></div><section id="drina">
+<h3>5.5.1. Сербский добровольческий корпус «Дрина»</h3>
+<p><strong>Название:</strong> Сербский добровольческий корпус. <strong>Позывной корпуса:</strong> «Дрина» — по названию реки.</p>
+<p><strong>Принадлежность:</strong> подфракция российской стороны, организационно включённая в игровой раздел ВС РФ. Это не самостоятельная сторона конфликта и не отдельная регулярная армия.</p>
+<p><strong>Происхождение.</strong> В вымышленной истории сервера в 2028 году, после выхода США из НАТО и роста международной напряжённости, часть бывших военнослужащих из Сербии и представителей сербской диаспоры приехала воевать на стороне России. Мотивы добровольцев различаются: чувство братства, заработок или личные счёты. Эти мотивы относятся к конкретным персонажам, а не ко всем сербам.</p>
+<p><strong>Статус.</strong> Формально корпус не является регулярной армией: это добровольческое формирование под российским командованием. Оно получает задачи через назначенных командиров и не всегда осведомлено об общих планах российских сил.</p>
+<p><strong>Роль на сервере:</strong> пехота и штурмовые группы.</p>
+<ul>
+<li><strong>Подчинение.</strong> Корпус выполняет задачи российского командования через установленную цепочку приказов. Добровольческий статус не разрешает игнорировать приказы или самостоятельно менять сторону конфликта. Приказы, нарушающие правила сервера, не выполняются (6.2).</li>
+<li><strong>Знания персонажа.</strong> Участник корпуса знает только то, что получил в игре: из приказа, доклада, брифинга или личного наблюдения. Принадлежность к российской стороне не даёт автоматического знания общих планов, маршрутов и расположения других подразделений. Информация из OOC-каналов не используется в IC.</li>
+<li><strong>Единая сторона.</strong> Российские подразделения и корпус «Дрина» являются союзниками. Статус отдельной подфракции не создаёт права на огонь друг по другу: беспричинное нападение на союзников оценивается по TeamKill и общим правилам.</li>
+<li><strong>Уровень отыгрыша.</strong> Для корпуса действует <strong>Medium RP</strong> и весь военный устав раздела 6, включая субординацию, правила плена, обращения с ранеными и применения силы.</li>
+<li><strong>Личные мотивы.</strong> Братство, деньги и личные счёты не заменяют конкретного IC-основания для насилия. Запреты на расизм, национальную и религиозную ненависть действуют без исключений.</li>
+</ul>
+</section>
 <h1 id="6"><a class="toclink" href="#6">6. Расширенные правила военных фракций (устав)</a></h1>
 <blockquote>
-<p>Действует для <strong>США (Delta Force), ЧВК «Вагнер», ВС РФ</strong>, а также для боевого крыла <strong>ИГИЛ</strong>
-(Боец, Медик, Командир отряда, Оружейник). Для этих ролей уровень отыгрыша — <strong>Hard RP</strong>:
-спрос строже, ошибки дороже, и помимо общих правил действует устав.</p>
+<p>Действует для <strong>США (Delta Force) и ВС РФ, включая Сербский добровольческий корпус «Дрина»</strong>. На сервере установлен единый уровень отыгрыша — <strong>Medium RP для всех</strong>. Военный устав дополняет общие правила субординацией и требованиями к службе, но не вводит отдельный повышенный уровень RP или повышенные наказания только за военную роль. Добровольческий статус корпуса не освобождает его участников от требований этого раздела.</p>
 </blockquote>
 <h2 id="61"><a class="toclink" href="#61">6.1. Субординация</a></h2>
 <ul>
@@ -634,24 +565,32 @@ RP-погружения других игроков. Отдельно и стр�
 <ul>
 <li>Приказ <strong>никогда</strong> не отменяет правил сервера. Приказ «убей гражданского без причины»,
   «слей координаты в Discord», «обчисти до нуля и брось» — не выполняется.</li>
-<li>Отказ от такого приказа — не дезертирство. Сообщите администрации; отвечать будет тот, кто приказал.</li>
+<li>Отказ от приказа, нарушающего правила сервера, не считается дезертирством. Командир отвечает за такой приказ; исполнитель, который выполнил его и нарушил правила, отвечает за собственные действия. Сообщите о ситуации администрации.</li>
 <li>Командир не может приказать совершить действие, которое сам нарушает правила (в том числе
   применить админ-возможности, если он администратор, — см. 4.3).</li>
 </ul>
 <h2 id="63"><a class="toclink" href="#63">6.3. Дисциплина огня (правила применения силы)</a></h2>
 <ol>
-<li><strong>Предупреждение.</strong> Если обстановка позволяет — сначала требование («стоять», «руки», «лицом к стене»),
-   затем огонь. Без предупреждения стреляют только при явной и непосредственной угрозе жизни.</li>
-<li><strong>Пропорциональность.</strong> Огонь — по вооружённой цели и по сопротивляющимся. Сбегающего
-   безоружного нельзя расстреливать «чтобы не ушёл» — это FreeKill, максимум задержание.</li>
-<li><strong>Запрет на добивание.</strong> Раненый, который не сопротивляется, — не мишень. Добивание без
-   IC-причины = FreeKill.</li>
+<li><strong>Открытие огня.</strong> В боевом столкновении по достоверно опознанному участнику противоборствующей стороны разрешено открывать огонь первым и без предупреждения. Не требуется ждать, пока противник заметит вас или выстрелит. Засады разрешены по 6.8. При непосредственной угрозе жизни допускается самооборона независимо от принадлежности нападающего. Защищённые зоны, плен и иные специальные ограничения сохраняются.</li>
+<li><strong>Задержание и опознание.</strong> При задержании, ограблении и похищении вне боевого контакта сначала предъявляют понятное требование и дают возможность подчиниться (3.7). Само бегство безоружного при проверке не разрешает убийство. Это не отменяет специальных правил о раненом противнике в текущем бою. IC-опознание может основываться на известной персонажу форме, знаках различия, наблюдении или допустимом докладе. OOC-таблица игроков, неизвестная персонажу модель или догадка не заменяют опознание; при обоснованном сомнении цель уточняют, а не стреляют наугад.</li>
+<li><strong>Раненые и выведенные из строя.</strong> Ранение — состояние персонажа, а не отдельный защищённый статус. Низкое здоровье, кровь, положение лёжа или тяжёлая травма сами по себе не означают, что персонаж сдался, попал в плен или перестал участвовать в бою. Дальнейшую судьбу найденного раненого определяет обнаружившая его сторона по обстановке и IC-основаниям. Подробности — ниже.</li>
 <li><strong>Гражданские.</strong> Огонь по гражданским запрещён, кроме прямой угрозы жизни (оружие в руках,
    нападение на бойца). «Он мне не понравился» — не причина.</li>
 <li><strong>Жилые зоны и скопления людей.</strong> Ответственность за перестрелку в жилом квартале несёт тот,
    кто её начал и командир, отдавший приказ. Массовые жертвы — как за Mass RDM.</li>
 <li><strong>Свои.</strong> Огонь по своим — TK (3.4). Даже «случайно» три раза подряд — уже система.</li>
-</ol>
+</ol><div class="wounded-rules">
+<h3 id="wounded">Ранение, продолжение боя и плен</h3>
+<ul><li><strong>Границы боя.</strong> Боевое столкновение — конкретный локальный эпизод контакта участвующих сторон, а не война в целом. Стрельба на другом участке не продлевает его автоматически. После фактического разрыва контакта и перехода к отдельной сцене обнаружения раненого действуют условия вне боя. После принятия сдачи и установления контроля над персонажем действуют правила плена даже при продолжающейся рядом стрельбе.</li>
+<li><strong>Кто считается раненым.</strong> Персонаж, получивший травму или урон. Степень ранения оценивается по игровым механикам и отыгрышу, а не по одной позе или количеству здоровья. Раненый может оставаться боеспособным, отступать, быть беспомощным или уже находиться в плену — это разные ситуации.</li>
+<li><strong>Решение нашедших.</strong> Обнаружившая сторона вправе помочь раненому, эвакуировать его, взять в плен, оставить на месте либо лишить жизни при наличии допустимого IC-основания. Само по себе обнаружение раненого не обязывает лечить его или брать в плен; раненый не вправе требовать гарантированного спасения.</li>
+<li><strong>Продолжающийся бой.</strong> Если раненый продолжает стрелять, оказывает вооружённое сопротивление или иным очевидным действием создаёт непосредственную угрозу, по нему разрешено применять силу на общих основаниях. Его ранения не дают иммунитета от огня.</li>
+<li><strong>Добивание раненого противника разрешено.</strong> В текущем боевом столкновении можно добить достоверно опознанного участника противоборствующей стороны, в том числе если из-за травмы он уже не способен сопротивляться. Отдельные предупреждение, приговор и персональный мотив мести для этого не требуются. Ранение не даёт иммунитета, но взятый под контроль пленный регулируется правилами плена. Отыгрыш в активном бою определяется 1.1.</li>
+<li><strong>Вне боевого столкновения.</strong> Найденного после завершения боя или в другой сцене раненого нельзя убивать автоматически «потому что война». Решение о его смерти должно иметь самостоятельное весомое IC-основание, связанное с текущим сюжетом, и отыгрыш. Найденный гражданский, союзник или неизвестный не становится законной целью из-за своего состояния.</li>
+<li><strong>Сдача и плен.</strong> Персонаж считается пленным, когда противоположная сторона фактически установила над ним контроль: приняла его сдачу и удерживает, связала, разоружила под контролем либо сопровождает как задержанного. Ранение или потеря сознания сами по себе не равны плену. Если контроль уже установлен, применяются пункты 3.7 и 6.7: нельзя объявить пленного «просто раненым» ради обхода правил казни. После принятой сдачи и установления контроля нельзя ссылаться на прежнюю перестрелку как на автоматическое разрешение добить.</li>
+<li><strong>Без злоупотреблений.</strong> Запрещены убийства ради развлечения, лута, OOC-мести или обхода правил плена, а также затягивание жестоких сцен. Натуралистичный отыгрыш не требуется. Беспричинное убийство остаётся FreeKill; огонь по своим оценивается по правилу TeamKill. Нельзя задним числом придумывать бой, принадлежность к противнику или IC-причину.</li>
+<li><strong>Мотив вне боя.</strong> Достоверно известное персонажу убийство его сослуживца или друга конкретным раненым может служить основанием для эмоциональной мести по условиям 3.7. Раса, цвет кожи, национальность и религия не могут быть основанием для убийства.</li></ul>
+</div>
 <h2 id="64"><a class="toclink" href="#64">6.4. Форма, знаки различия и маскировка</a></h2>
 <ul>
 <li>Форма фракции носится открыто: по ней вас опознают и гражданские, и противник.</li>
@@ -670,47 +609,38 @@ RP-погружения других игроков. Отдельно и стр�
 </ul>
 <h2 id="66"><a class="toclink" href="#66">6.6. Радио, связь и военная тайна</a></h2>
 <ul>
-<li>Радио и доклады — IC: координаты, приказы, планы передаются игрой и голосом персонажа.</li>
+<li><strong>Игровая связь — IC по умолчанию.</strong> Переговоры по телефону и рации, включая координаты, приказы и доклады, являются IC-информацией для персонажей, которые действительно получили или услышали сообщение.</li><li><strong>Пометка «по нон РП».</strong> Заранее и явно обозначенная OOC-реплика по телефону или рации не является IC-сведением и не используется персонажами. Пример: «По нон РП — АК-74М, как по мне, лучше АК-12». Пометка не отменяет запретов на MetaGaming и срыв сцены; подробности — в 1.4.</li>
 <li>Передача этой информации <strong>вне игры</strong> (Discord, личка, стрим) — MetaGaming с самым тяжёлым
   наказанием в этой категории (Ban от 1 до 3 дней, при повторности — до 7).</li>
-<li>Слушать чужой голосовой канал фракции, не находясь в ней, — тоже MetaGaming.</li>
+<li><strong>Перехват и чужие каналы.</strong> OOC-доступ к закрытым каналам другой фракции и использование полученных оттуда сведений в IC запрещены. Информация, услышанная через разрешённую игровую механику, является IC: например, по добытой в игре рации, если сервер допускает её использование, либо при реально слышимом рядом разговоре. Сам факт чужой фракционной принадлежности не делает такой игровой перехват MetaGaming. Реплики с предварительной OOC-пометкой остаются OOC.</li>
 </ul>
 <h2 id="67"><a class="toclink" href="#67">6.7. Пленные и обращение с ними</a></h2>
 <ul>
-<li>Пленнику сохраняют жизнь до окончания сцены. Казнь — только по веской причине и с отыгрышем (3.7).</li>
-<li>Применение урона, увечий и медицинских экспериментов «для атмосферы» без сцены — FreeDamage.</li>
-<li>Требования к пленному — через отыгрыш. Он может отказаться: это его IC-выбор, дальше — по сцене,
-  но помните про FearRP с его стороны и про запрет на бессмысленное убийство с вашей.</li>
-<li>Обмен пленными — самая приветствуемая форма развязки: докладывайте командиру, а не решайте сами,
-  если это не ваша роль.</li>
+<li><strong>Личная месть и запрет дискриминации.</strong> Убийство конкретного пленного за известное персонажу убийство его сослуживца или друга может быть допустимым RP-поступком. Убийство по расовому, национальному или религиозному признаку запрещено. Подробные условия — в 3.7.</li><li><strong>Решение захватившей стороны.</strong> Дальнейшую судьбу пленного определяет удерживающая его сторона с учётом полномочий и приказов внутри фракции. Пленный не может требовать гарантированного освобождения, а захватившие не могут считать плен разрешением на любое насилие. Полные ограничения и сроки — в пункте 3.7.</li>
+<li><strong>Варианты развязки.</strong> Освобождение, обмен, передача уполномоченным представителям своей стороны или обоснованная сюжетная казнь. Переговоры и обмен предпочтительны; казнь — исключение, а не стандартный исход каждого плена. Передача пленного не обнуляет общий срок удержания.</li>
+<li><strong>Приказы и эмоциональный поступок.</strong> Плановая казнь согласуется со старшим по роли, если он присутствует в сцене. Для непосредственного эмоционального поступка по допустимому мотиву из 3.7 предварительное согласование не обязательно, но последствия по уставу сохраняются. Ни приказ, ни эмоции не заменяют IC-основание и не оправдывают дискриминационное убийство. Отказ выполнить приказ, нарушающий правила сервера, не считается дезертирством (6.2).</li>
+<li><strong>Допрос.</strong> Требования формулируются через отыгрыш. Пленный соблюдает FearRP, но игрок не обязан раскрывать OOC-информацию, пароли или реальные личные сведения. Результат спорного действия не навязывается через <code>/me</code>; используется согласование или предусмотренная сервером механика. Отказ от жестокого отыгрыша — не IC-неповиновение и не основание для наказания персонажа.</li>
+<li><strong>Пытки и казни.</strong> Не обязательны и не поощряются. Возможны только в пределах обоснованного сюжета и пункта 3.7: без натуралистичных деталей, с возможностью пропустить жестокий эпизод. Нельзя превращать плен в длительное издевательство или использовать урон как развлечение. Отказ участника от подробного отыгрыша переводит жестокий эпизод за кадр, но не гарантирует спасение персонажа от допустимой по правилам игровой смерти (3.7).</li>
+<li><strong>Завершение.</strong> По истечении допустимого срока сцена плена завершается. Истечение срока само по себе не разрешает убийство. Спорные случаи передаются администрации без продолжения насилия над пленным.</li>
 </ul>
-<h2 id="68"><a class="toclink" href="#68">6.8. Конфликты между фракциями и эскалация</a></h2>
+<h2 id="68"><a class="toclink" href="#68">6.8. Конфликты между фракциями и эскалация</a></h2><p>По лору между Россией и США уже идёт война. Боевые действия требуют IC-опознания противника и соблюдения 6.3, но не отдельного объявления войны перед каждым контактом.</p>
 <ol>
-<li>Напряжение: патрули, требования, демонстрация силы.</li>
-<li>Локальные стычки: перестрелки при контакте, имеющие IC-основание.</li>
-<li>Полноценные операции: штурмы, засады, диверсии, захваты командиров — <strong>согласуются</strong>
-   с администрацией (ивент/сюжет) и не устраиваются «на 5 минут перед сном».</li>
-<li>Запрещено: снос тыловых зон (спавн, больница), уничтожение чужого транспорта «для веселья»,
-   бесконечные рейды по кругу без цели. Война должна иметь цель — территорию, груз, пленного,
-   командира противника.</li>
-</ol>
-<h2 id="69"><a class="toclink" href="#69">6.9. Дезертирство и переход фракции</a></h2>
-<ul>
-<li>Переход в другую фракцию — только через смену роли и с согласия администрации; звания и
-  снаряжение не переносятся.</li>
-<li>Предательство (передача склада, координат, пленного) — IC-действие с IC-последствиями:
-  старая фракция вправе вас судить. OOC-оскорбления за это в ваш адрес — нарушение 4.1.</li>
-<li>Дезертир в бою, бросивший своих, получает трибунал своей фракции; никакие «а я теперь никто»
-  не отменяют последствий до конца сцены.</li>
-</ul>
-<h2 id="610"><a class="toclink" href="#610">6.10. Наказания для военных: устав + правила сервера</a></h2>
+<li><strong>Разрешённые боевые действия.</strong> Патрули, встречные столкновения, засады, локальные штурмы и диверсии в разрешённых для боя местах допускаются по игровым приказам и IC-целям. По опознанному противнику можно открывать огонь без предупреждения. Засада сама по себе не требует отдельного разрешения администрации.</li>
+<li><strong>Сюжетные исключения.</strong> Отдельно согласуются события, изменяющие установленный лор, постоянные границы/статус защищённых зон либо использующие административный спавн и иные вмешательства, недоступные обычной механике. Особые опубликованные условия конкретного ивента обязательны для его участников.</li>
+<li><strong>Ограничения.</strong> Разрешение на засады и штурмы не отменяет запреты на спавн-килл, блокировку защищённых точек и бессмысленное уничтожение транспорта. Запрещены бесконечные рейды без IC-цели и использование военного лора как оправдания любого убийства. Задача должна иметь игровую цель: позицию, территорию, груз, пленного или действия против подразделения противника.</li>
+</ol><h2 id="69"><a class="toclink" href="#69">6.9. Дезертирство и переход фракции</a></h2><ul>
+<li><strong>Переключение стороны — другой персонаж.</strong> Переход через F4 между США, российской стороной и гражданскими подчиняется 5.1: память и IC-ответственность принадлежат соответствующему персонажу, а не всем персонажам игрока. Доступ к ролям и согласования, предусмотренные сервером, сохраняются.</li>
+<li><strong>Предательство и дезертирство.</strong> Поступки персонажа могут иметь IC-последствия для него: разбирательство, трибунал, изгнание. При возвращении к этому персонажу последствия не исчезают, кроме сведений и обстоятельств, утраченных по NLR. Другого персонажа игрока нельзя преследовать за эти действия без самостоятельного IC-основания.</li>
+<li><strong>Незавершённая сцена.</strong> Нельзя переключать сторону или должность ради выхода из боя, плена, задержания либо другого активного разбирательства (1.7). Переключение вне сцены не является само по себе IC-дезертирством.</li>
+<li><strong>Сюжетный переход того же человека.</strong> Это отдельное исключение, согласуемое с администрацией до события. Если по сюжету сторону меняет тот же персонаж, сохраняются его личность, доступные ему знания и ответственность. Обычный выбор другой стороны через F4 такого перехода не создаёт.</li>
+</ul><h2 id="610"><a class="toclink" href="#610">6.10. Наказания для военных: устав + правила сервера</a></h2>
 <p>Военные отвечают <strong>дважды</strong>: по уставу (внутри игры) и по правилам сервера (если нарушены они).</p>
-<table>
+<div aria-label="Таблица правил — при необходимости прокрутите по горизонтали" class="table-scroll" role="region" tabindex="0"><table>
 <thead>
 <tr>
-<th>Ситуация</th>
-<th>Устав (IC)</th>
-<th>Правила сервера (OOC)</th>
+<th scope="col">Ситуация</th>
+<th scope="col">Устав (IC)</th>
+<th scope="col">Правила сервера (OOC)</th>
 </tr>
 </thead>
 <tbody>
@@ -737,7 +667,7 @@ RP-погружения других игроков. Отдельно и стр�
 <tr>
 <td>Приказ, нарушающий правила</td>
 <td>Командир — под трибунал</td>
-<td>Наказывается командир, не исполнитель</td>
+<td>Командир — за запрещённый приказ; исполнитель — за совершённые им нарушения. Получение приказа и отказ нарушать правила не наказываются.</td>
 </tr>
 <tr>
 <td>Слив координат в Discord</td>
@@ -745,15 +675,15 @@ RP-погружения других игроков. Отдельно и стр�
 <td>MetaGaming (2.3), Ban 1–3 дня</td>
 </tr>
 </tbody>
-</table>
-<hr />
+</table></div>
+<hr/>
 <h1 id="7"><a class="toclink" href="#7">7. Сводная таблица наказаний</a></h1>
-<table>
+<div aria-label="Таблица правил — при необходимости прокрутите по горизонтали" class="table-scroll" role="region" tabindex="0"><table>
 <thead>
 <tr>
-<th>№</th>
-<th>Нарушение</th>
-<th>Наказание</th>
+<th scope="col">№</th>
+<th scope="col">Нарушение</th>
+<th scope="col">Наказание</th>
 </tr>
 </thead>
 <tbody>
@@ -839,7 +769,7 @@ RP-погружения других игроков. Отдельно и стр�
 </tr>
 <tr>
 <td>3.7</td>
-<td>Нарушения плена, обыска, казни</td>
+<td>Нарушения плена, обыска, жестоких сцен и казни</td>
 <td>Jail 30–60 мин; казнь без причины — как FK</td>
 </tr>
 <tr>
@@ -873,18 +803,18 @@ RP-погружения других игроков. Отдельно и стр�
 <td>Jail 30–60 мин / Ban 1–7 дней</td>
 </tr>
 </tbody>
-</table>
-<p><strong>Принципы наказаний:</strong> первое нарушение — минимальная мера из диапазона; повторное — максимум;
+</table></div>
+<p class="penalty"><strong>Принципы наказаний:</strong> первое нарушение — минимальная мера из диапазона; повторное — максимум;
 систематическое — бан. Администратор вправе выйти за диапазон в обе стороны, если ситуация этого
 требует, и обязан объяснить решение. Наказание не «выкупается» IC-деньгами или отыгрышем.</p>
-<hr />
+<hr/>
 <h1 id="8"><a class="toclink" href="#8">8. Приложение: команды и механики сервера</a></h1>
-<table>
+<div aria-label="Таблица правил — при необходимости прокрутите по горизонтали" class="table-scroll" role="region" tabindex="0"><table>
 <thead>
 <tr>
-<th>Что</th>
-<th>Как</th>
-<th>Кто может</th>
+<th scope="col">Что</th>
+<th scope="col">Как</th>
+<th scope="col">Кто может</th>
 </tr>
 </thead>
 <tbody>
@@ -964,10 +894,10 @@ RP-погружения других игроков. Отдельно и стр�
 <td>все</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Чего на сервере нет</strong> (и требовать это бессмысленно): кармы и «минусов» за убийства,
 перехода в наблюдатели за AFK, старых режимов и раундов, авто-наказаний — всё решает администрация.</p>
-<hr />
+<hr/>
 <h1 id="9"><a class="toclink" href="#9">9. Администрация и изменения правил</a></h1>
 <ul>
 <li>Правила дополняются по мере развития сервера; актуальная версия всегда в закреплённом сообщении
@@ -976,9 +906,70 @@ RP-погружения других игроков. Отдельно и стр�
 <li>Если правило можно трактовать двояко — спросите <strong>до</strong> действия.</li>
 <li>Предложения по правилам принимаются вне игры; обсуждение правил в IC запрещено.</li>
 </ul>
-<p><em>Документ версии 1.0. Последнее изменение — вместе со сборкой 0.3.4.</em></p>
-  </main>
+<p><em>Документ версии 1.8. Уточнены ответственность за приказы, боевые контакты и засады, добивание раненых, раздельные персонажи сторон, NLR с двухминутным запретом возвращения, границы OOC-согласия и игровой перехват связи. Medium RP действует для всех. Описание механик основано на исходной редакции для сборки 0.3.4; техническая реализация новых правил требует проверки администрацией.</em></p>
+</main>
 </div>
-<div class="footer">Документ подготовлен для сервера V-City RP. Фракции и конфликты вымышлены и не связаны с реальной политикой, религией и организациями. Изменения правил вступают в силу с момента публикации актуальной версии.</div>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4986db40e4870dd',t:'MTc5MTgzMjQ3Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-</html>
+<div class="footer">Документ подготовлен для сервера V-City RP. Лор представляет собой вымышленную альтернативную историю 2028 года. Изменения правил вступают в силу с момента публикации актуальной версии.</div>
+<a aria-label="Вернуться наверх" class="to-top" href="#top">↑</a><script>(()=>{
+ document.body.classList.add('has-js');
+ const main=document.querySelector('main'), input=document.getElementById('rule-search'), status=document.getElementById('search-status');
+ const next=document.getElementById('search-next'), clear=document.getElementById('search-clear');
+ const nav=document.querySelector('nav.toc'), toggle=document.getElementById('nav-toggle');
+ let hits=[], index=-1, timer;
+ toggle.addEventListener('click',()=>{const open=nav.classList.toggle('mobile-open');toggle.setAttribute('aria-expanded',String(open));});
+ nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('mobile-open');toggle.setAttribute('aria-expanded','false');}});
+ function selectHit(step){
+  if(!hits.length)return;
+  if(index>=0)hits[index].classList.remove('selected');
+  index=(index+step+hits.length)%hits.length;
+  const hit=hits[index];hit.classList.add('selected');
+  for(let parent=hit.parentElement;parent;parent=parent.parentElement){if(parent.tagName==='DETAILS')parent.open=true;}
+  hit.scrollIntoView({block:'center',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  status.textContent=`${index+1} / ${hits.length}`;
+ }
+ function search(){
+  main.querySelectorAll('mark.search-hit').forEach(mark=>mark.replaceWith(document.createTextNode(mark.textContent)));
+  main.normalize();hits=[];index=-1;
+  const query=input.value.trim().toLocaleLowerCase('ru');
+  next.disabled=true;clear.disabled=!input.value;status.textContent='';
+  if(!query)return;
+  const walker=document.createTreeWalker(main,NodeFilter.SHOW_TEXT,{acceptNode(node){
+   return !node.parentElement.closest('.tools,summary,script,style')&&node.textContent.trim()?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;
+  }});
+  const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+  for(const node of nodes){
+   const text=node.textContent,lower=text.toLocaleLowerCase('ru');let pos=0,at=lower.indexOf(query),fragment;
+   if(at<0)continue;
+   fragment=document.createDocumentFragment();
+   while(at>=0){
+    fragment.append(document.createTextNode(text.slice(pos,at)));
+    const mark=document.createElement('mark');mark.className='search-hit';mark.textContent=text.slice(at,at+query.length);fragment.append(mark);hits.push(mark);
+    pos=at+query.length;at=lower.indexOf(query,pos);
+   }
+   fragment.append(document.createTextNode(text.slice(pos)));node.replaceWith(fragment);
+  }
+  status.textContent=hits.length?`${hits.length} найдено`:'Не найдено';next.disabled=!hits.length;
+ }
+ input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(search,160);});
+ input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();clearTimeout(timer);if(!hits.length)search();selectHit(e.shiftKey?-1:1);}if(e.key==='Escape'){input.value='';search();input.blur();}});
+ next.addEventListener('click',()=>{clearTimeout(timer);if(!hits.length)search();selectHit(1);});
+ clear.addEventListener('click',()=>{clearTimeout(timer);input.value='';search();input.focus();});
+ document.getElementById('print-rules').addEventListener('click',()=>window.print());
+ const links=[...nav.querySelectorAll('a[href^="#"]')], targets=links.map(a=>({a,node:document.getElementById(a.getAttribute('href').slice(1))})).filter(x=>x.node);
+ let scheduled=false;
+ function update(){
+  scheduled=false;
+  const max=document.documentElement.scrollHeight-window.innerHeight;
+  document.getElementById('reading-progress').style.width=(max>0?100*window.scrollY/max:0)+'%';
+  let current=targets[0];
+  for(const item of targets){if(item.node.getBoundingClientRect().top<=100)current=item;}
+  links.forEach(a=>{a.classList.toggle('current',a===current?.a);if(a===current?.a)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
+ }
+ window.addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(update);}},{passive:true});
+ window.addEventListener('resize',update);update();
+ // Include the compact quick-reference section when printing.
+ const quick=document.querySelector('.quick-shell');let wasOpen=false;
+ window.addEventListener('beforeprint',()=>{wasOpen=quick.open;quick.open=true;});
+ window.addEventListener('afterprint',()=>{quick.open=wasOpen;});
+})();
+</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4d6cca73a48380a',t:'MTc5MjQ4NjQ4Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
